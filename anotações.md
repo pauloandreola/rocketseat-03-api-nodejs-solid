@@ -13,4 +13,6 @@ criar os scripts:
     "build": "tsup src --out-dir build" (busca todo o código do projeto que está dentro da pasta src e cria uma pasta dist com o código em Javascript)
 criar arquivo .npmrc e inserir save-exact=true para manter as versões das bibliotecas sem atualizações de versões... rodar novamente a instalação das bibliotecas. Para identificar que as verões não serão alteradas as versões não devem ter ^ ou ~.
 Obs. Preferencialmente sempre salvar as versões exatas das bibliotecas no package.json.
+npm i dotenv
+npm i zod
 
