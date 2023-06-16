@@ -15,4 +15,5 @@ criar arquivo .npmrc e inserir save-exact=true para manter as versões das bibli
 Obs. Preferencialmente sempre salvar as versões exatas das bibliotecas no package.json.
 npm i dotenv
 npm i zod
+npm i eslint @rocketseat/eslint-config -D (formato padrão de configuração da rocketseat)
 
