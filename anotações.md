@@ -69,3 +69,22 @@ Esse comando acima vai rodar o schema.prisma, ver todas as tabelas, ou campos ex
 Quando roda o comando ele pede um nome para a migration, descrever o que deve ser criado nessa migration para que se tenha o histórico das inclusões, exclusões, atualizações, criações, etc.
 Nessa migration teremos as informações da timestamp e a descrição inserida no momento da criação. Isso para termos um controle de versão.
 npx prisma studio (Comando para abrir no navegador uma interface para navegar as tabelas do banco de dados)
+--------------- INSTALAR DOCKER COM ARQUIVO COMPOSE
+criar o arquivo docker-compose.yml na raiz do projeto
+version: '3'
+
+services:
+  api-nodejs-solid:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=apisolid
+docker compose up -d (rodar o docker compose que cria um banco de dados em background/segundo plano sem mostrar os logs de criação)
+docker compose up (rodar o docker compose que cria um banco de dados mostrando os logs de criação)
+docker compose stop (somente parar de executar o container no docker)
+docker compose down (parar e deletar/remover o container criado no docker compose)
+
+
