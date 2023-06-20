@@ -86,5 +86,5 @@ docker compose up -d (rodar o docker compose que cria um banco de dados em backg
 docker compose up (rodar o docker compose que cria um banco de dados mostrando os logs de criação)
 docker compose stop (somente parar de executar o container no docker)
 docker compose down (parar e deletar/remover o container criado no docker compose)
-
-
+--------------- FIM INSTALAR DOCKER COM ARQUIVO COMPOSE
+npx prisma migrate dev --create-only por já ter uma tabela criada
