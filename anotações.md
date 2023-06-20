@@ -87,9 +87,10 @@ docker compose up (rodar o docker compose que cria um banco de dados mostrando o
 docker compose stop (somente parar de executar o container no docker)
 docker compose down (parar e deletar/remover o container criado no docker compose)
 --------------- FIM INSTALAR DOCKER COM ARQUIVO COMPOSE
-npx prisma migrate dev --create-only por já ter uma tabela criada
 
-Relacionamento 1 para N
-Relacionamento de N para N - um registro de uma tabela pode ter 
+Relacionamento
+1 para 1 - um registro de uma tabela pode ter acesso/se relacionar/interagir com um registro de outra tabela  
+1 para N - um registro de uma tabela pode ter acesso/se relacionar/interagir com diversos registros de outra tabela Ex. Um usuário pode fazer diversos checkins
+N para N - diversos registro de uma tabela podem ter acesso/se relacionar/interagir com diversos registros de outra tabela
 
-npx prisma migrate dev
+npx prisma migrate dev (para gerar a migration e criar o banco de dados)
