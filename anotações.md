@@ -88,3 +88,8 @@ docker compose stop (somente parar de executar o container no docker)
 docker compose down (parar e deletar/remover o container criado no docker compose)
 --------------- FIM INSTALAR DOCKER COM ARQUIVO COMPOSE
 npx prisma migrate dev --create-only por já ter uma tabela criada
+
+Relacionamento 1 para N
+Relacionamento de N para N - um registro de uma tabela pode ter 
+
+npx prisma migrate dev
