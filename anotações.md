@@ -94,3 +94,6 @@ Relacionamento
 N para N - diversos registro de uma tabela podem ter acesso/se relacionar/interagir com diversos registros de outra tabela
 
 npx prisma migrate dev (para gerar a migration e criar o banco de dados)
+
+npm i bcryptjs (para criar hash da senha)
+npm i -D @types/bcryptjs
