@@ -1,7 +1,6 @@
 import { hash } from 'bcryptjs'
 
 import { UsersRepository } from '@/repositories/users-repository'
-import { UserAlreadyExistsError } from './errors/user-already-exists-error'
 
 interface RegisterUseCaseRequest {
   name: string
@@ -18,7 +17,7 @@ export class RegisterUseCase {
     const userWithSameEmail = await this.usersRepository.findByEmail(email)
 
     if (userWithSameEmail) {
-      throw new UserAlreadyExistsError()
+      throw new Error('E-mail already exists.')
     }
 
     // Agora o código não está mais associado ao prisma, ou seja, sem nenhuma dependência.
