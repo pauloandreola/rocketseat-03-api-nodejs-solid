@@ -62,7 +62,7 @@ para ver os logs, utilizar o comando docker logs com o ID, ou o nome do containe
 docker logs b1f90b41a687, ou docker logs api-nodejs-solid
 ------------- FIM DA CONFIGURAÇÃO DO DOCKER ------------------ 
 npx prisma migrate dev
-Prisma vai solicitar um nome para essa migraton
+Prisma vai solicitar um nome para essa migration
 Obs. Se o comando gerar esse erro: "Error: P1000: Authentication failed against database server at `localhost`, the provided database credentials for `docker` are not valid."
 Entrar no gerenciamento de serviços do windows e desabilitar a inicialização do Postgresql que deve estar habilitada.
 Esse comando acima vai rodar o schema.prisma, ver todas as tabelas, ou campos existentes e que ainda não foram refletidas no banco de dados, ou seja, incluídas/adicionadas, excluídas/removidas, atualizadas/alteradas, ou até mesmo criadas. 
