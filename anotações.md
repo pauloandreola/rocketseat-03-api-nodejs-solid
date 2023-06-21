@@ -98,3 +98,5 @@ npx prisma migrate dev (para gerar a migration e criar o banco de dados)
 npm i bcryptjs (para criar hash da senha)
 npm i -D @types/bcryptjs
 npm vitest vite-tsconfig-paths -D
+
+https://martinfowler.com/bliki/InMemoryTestDatabase.html
