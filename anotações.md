@@ -100,3 +100,5 @@ npm i -D @types/bcryptjs
 npm vitest vite-tsconfig-paths -D
 
 https://martinfowler.com/bliki/InMemoryTestDatabase.html
+
+npm i @vitest/coverage-v8
