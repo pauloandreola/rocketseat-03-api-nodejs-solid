@@ -95,10 +95,14 @@ N para N - diversos registro de uma tabela podem ter acesso/se relacionar/intera
 
 npx prisma migrate dev (para gerar a migration e criar o banco de dados)
 
-npm i bcryptjs (para criar hash da senha)
-npm i -D @types/bcryptjs
-npm vitest vite-tsconfig-paths -D
+npm i bcryptjs (para criar hash de senhas)
+npm i -D @types/bcryptjs (para compatibilizar o bcryptjs com o typescript)
+npm vitest vite-tsconfig-paths -D (vitest para gerar os testes unitários, e o vite-tsconfig-path para que o vitest consiga entender a configuração dos paths do tsconfig)
 
 https://martinfowler.com/bliki/InMemoryTestDatabase.html
 
-npm i @vitest/coverage-v8
+npm i @vitest/coverage-v8 (para fazer uma verificação para ver se foram feitas todas as coberturas de testes)
+    "test:coverage": "vitest run --coverage",
+
+npm i -D @vitest/ui (para apresentar o resultado dos testes de uma forma mais visual em página web.)
+    "test:ui": "vitest --ui"
