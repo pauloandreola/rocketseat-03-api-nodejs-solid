@@ -106,3 +106,5 @@ npm i @vitest/coverage-v8 (para fazer uma verificação para ver se foram feitas
 
 npm i -D @vitest/ui (para apresentar o resultado dos testes de uma forma mais visual em página web.)
     "test:ui": "vitest --ui"
+
+npm i dayjs - https://day.js.org/ - https://www.npmjs.com/package/dayjs

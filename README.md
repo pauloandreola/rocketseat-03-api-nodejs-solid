@@ -20,7 +20,7 @@ GymPass style app.
 ## RN's (Regras de Negócio)
 
 - [ X ] - O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [  ] - O usuário não pode fazer check-in no mesmo dia;
+- [ X ] - O usuário não pode fazer check-in no mesmo dia;
 - [  ] - O usuário não pode fazer check-in se não estiver perto (100m) da academia;
 - [  ] - O check-in só pode ser validado 20 minutos após criado;
 - [  ] - O check-in só pode ser validado por administradores;
